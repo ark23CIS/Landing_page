@@ -149,14 +149,4 @@
   display: none;
   font-size: 25px;
 }
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=header.css.map */
