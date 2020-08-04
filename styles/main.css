@@ -1,1 +1,126 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 14px;
+}
+
+.bg {
+  background: url("../assets/top bg.png") center center no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+
+.hero {
+  padding: 100px 0;
+  background-size: contain;
+  background: url("../assets/Layer 1.png") center center no-repeat;
+}
+
+.wrapper {
+  padding-top: 3%;
+  padding-bottom: 25%;
+}
+
+.container {
+  background-color: #383838;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  font-size: 44px;
+  height: 100%;
+  background-color: #b297c4;
+  color: #fff;
+  padding: 1% 1%;
+  text-transform: uppercase;
+}
+
+.menu__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  justify-items: flex-end;
+  padding-left: 40%;
+}
+
+.menu__link {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: #383838;
+  border: 0;
+  border-right: 1px solid #000;
+}
+
+.menu__link:first-child {
+  border-left: 1px solid #000;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #f6e2d1;
+}
+
+.hero__image {
+  margin-bottom: 45px;
+  font-size: 100px;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-size: 22px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  font-size: 18px;
+  padding: 1% 2%;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border: 1px solid #f6e2d1;
+  border-radius: 1px;
+  color: #f6e2d1;
+  background-color: #eab88f;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 595px) {
+  .hero__title {
+    font-size: 38px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
