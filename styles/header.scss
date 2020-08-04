@@ -61,14 +61,9 @@ $chevron-right-color: #f0af76;
 .header-menu-link {
   display: inline-block;
   text-transform: uppercase;
-  padding: 2% 3%;
   color: $white;
   background: $gray;
-  border-right: 1px solid #000;
   text-decoration: none;
-}
-.header-menu-link:first-child {
-  border-left: 1px solid #000;
 }
 
 .hero-content {

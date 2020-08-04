@@ -66,15 +66,9 @@
 .header-menu-link {
   display: inline-block;
   text-transform: uppercase;
-  padding: 2% 3%;
   color: #fff;
   background: #383838;
-  border-right: 1px solid #000;
   text-decoration: none;
-}
-
-.header-menu-link:first-child {
-  border-left: 1px solid #000;
 }
 
 .hero-content {
