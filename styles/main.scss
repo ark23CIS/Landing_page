@@ -1,7 +1,3 @@
-@import "./header.scss";
-@import "./main-section.scss";
-@import "./footer.scss";
-
 @mixin Fjalla {
   font-family: "Fjalla One", sans-serif;
 }
@@ -14,3 +10,13 @@ body {
   @include Fjalla;
   font-size: 14px;
 }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+@import "./header.scss";
+@import "./main-section.scss";
+@import "./footer.scss";

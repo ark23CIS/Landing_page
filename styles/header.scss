@@ -7,12 +7,6 @@ $herobtn-color-bg: #eab88f;
 $chevron-left-color: #b33a47;
 $chevron-right-color: #f0af76;
 
-.bg {
-  background: url("../assets/top\ bg.png") center center no-repeat;
-  height: 100%;
-  background-size: cover;
-}
-
 .hero-wrap {
   padding: 5% 10% 0 10%;
 }
@@ -29,6 +23,9 @@ $chevron-right-color: #f0af76;
 
 .wrapper {
   padding-top: 3%;
+  background: url("../assets/top\ bg.png") center center no-repeat;
+  height: 100%;
+  background-size: cover;
 }
 .container {
   background-color: $gray;
@@ -72,6 +69,7 @@ $chevron-right-color: #f0af76;
   align-items: center;
   text-align: center;
   color: $herobtn-color;
+  opacity: 0.6;
 }
 
 .hero__image {
@@ -96,7 +94,7 @@ $chevron-right-color: #f0af76;
 
 .hero__button {
   font-size: 18px;
-  padding: 0.5% 0.3%;
+  padding: 0.8% 1%;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -111,18 +109,37 @@ $chevron-right-color: #f0af76;
   background-color: $white;
   opacity: 0.6;
   text-align: center;
-}
-
-.chevron-left {
-  color: $chevron-left-color;
-}
-
-.chevron-right {
-  color: $chevron-right-color;
+  &-left {
+    color: $chevron-left-color;
+  }
+  &-right {
+    color: $chevron-right-color;
+  }
 }
 
 .hamburger {
   color: $white;
   display: none;
   font-size: 25px;
+}
+
+.hero-features {
+  padding: 2% 0;
+  display: grid;
+  background-color: $white;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-feature {
+  text-align: center;
+  &__icon {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    text-decoration: underline;
+  }
 }

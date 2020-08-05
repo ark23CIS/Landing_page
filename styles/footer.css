@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+.footer {
+  color: #71607c;
+  background: url("../assets/top bg.png") 100% 100% no-repeat;
+}
+
+.footer-wrapper {
+  padding: 5% 10%;
+}
+
+.footer-website-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-menu__item {
+  list-style-type: none;
+  display: block;
+  padding-right: 5%;
+}
+
+.footer-menu__item-link {
+  text-decoration: none;
+  color: #71607c;
+}
+
+.footer-divider {
+  height: 2px;
+  width: 100%;
+  background-color: #474646;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 0;
+}
+
+.footer-links-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.footer-list {
+  width: 100%;
+}
+
+.footer-content-item {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10% 0;
+}
+
+.footer-content-item__subtitle {
+  margin-top: 15px;
+  color: #a5a5a5;
+}
+
+.footer-content-item-link {
+  text-decoration: none;
+  color: #a5a5a5;
+}
+
+.social-networks {
+  -ms-grid-column-align: space-between;
+      justify-self: space-between;
+}
+
+.social-networks-item {
+  padding-right: 2%;
+}
+/*# sourceMappingURL=footer.css.map */
