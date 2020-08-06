@@ -4,7 +4,7 @@ $main-font-color: #747474;
 $white: #fff;
 
 .main-content-wrapper {
-  padding: 5% 10%;
+  padding: 0 10% 10% 10%;
 }
 
 .main-content {
@@ -64,6 +64,28 @@ $white: #fff;
         padding-right: 2%;
       }
     }
+  }
+}
+
+.main-content-features {
+  padding: 3% 0;
+  margin-bottom: 5%;
+  display: grid;
+  background-color: $white;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main-content-feature {
+  text-align: center;
+  &__icon {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    text-decoration: underline;
   }
 }
 
