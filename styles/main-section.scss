@@ -10,17 +10,43 @@ $white: #fff;
 .main-content {
   background-color: $main-bg-color;
   color: $main-font-color;
-  // &-websites-menu {
-  //   &__item {
-  //     list-style-type: none;
-  //   }
-  // }
+  &-search {
+    width: 100%;
+    display: flex;
+
+    &__icon {
+      color: $purple-color;
+      border: none;
+      background-color: $main-bg-color;
+    }
+    &-form {
+      width: 80%;
+      &__input {
+        border: none;
+        background-color: $main-bg-color;
+      }
+    }
+  }
   &-divider {
     width: 100%;
     height: 0.5px;
     background-color: $main-bg-color;
   }
   &-menu {
+    padding: 4% 0;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__item {
+      padding: 2% 0;
+      font-size: 12px;
+      &-icon {
+        color: $purple-color;
+        padding-right: 2%;
+      }
+    }
   }
 }
 
@@ -33,6 +59,7 @@ $white: #fff;
   justify-content: space-between;
   &__title {
     text-transform: uppercase;
+    padding-bottom: 5%;
   }
   &__img {
     margin: 20px 0;
@@ -40,10 +67,38 @@ $white: #fff;
   &__subtitle {
     margin-bottom: 20px;
   }
-  &__sign {
-    border-radius: 10%;
-    padding: 5% 10%;
-    background-color: $purple-color;
+  &-sign {
+    display: flex;
+    &__img {
+      border-radius: 10%;
+      padding: 5% 10%;
+      margin-right: 17px;
+      background-color: $purple-color;
+    }
+    &-maintenance {
+      font-style: 12px;
+      &__title {
+        text-transform: uppercase;
+        color: $purple-color;
+      }
+      &__subtitle {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-8,
+  &-9,
+  &-10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  &-icons-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    justify-content: space-around;
   }
 }
 
@@ -66,9 +121,6 @@ $white: #fff;
   background-color: $purple-color;
 }
 
-.main-content-item {
-}
-
 .main-content-item-1 {
   grid-area: 1 / 1 / 4 / 2;
 }
@@ -86,7 +138,8 @@ $white: #fff;
 
 .main-content-item-9 {
   grid-area: 2 / 4 / 3 / 5;
-  justify-self: stretch;
+  padding: 5%;
+  display: block;
 }
 
 .main-content-item-2 {
