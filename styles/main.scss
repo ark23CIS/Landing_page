@@ -11,6 +11,7 @@ $main-font-color: #747474;
 body {
   @include Fjalla;
   font-size: 14px;
+  color: $main-font-color;
 }
 
 ul,
