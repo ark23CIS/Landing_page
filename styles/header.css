@@ -53,14 +53,26 @@
   text-transform: uppercase;
 }
 
+.header-menu-item {
+  height: 100%;
+  padding-right: 10px;
+}
+
+.header-menu-item:last-child {
+  margin-right: -10px;
+}
+
 .header-menu-wrap {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  padding: 2% 0 2% 0;
 }
 
 .header-menu-link {
+  height: 100%;
   display: inline-block;
   text-transform: uppercase;
   color: #fff;

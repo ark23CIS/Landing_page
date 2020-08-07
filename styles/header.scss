@@ -50,12 +50,23 @@ $chevron-right-color: #f0af76;
   padding: 1% 1%;
   text-transform: uppercase;
 }
+
+.header-menu-item {
+  height: 100%;
+  padding-right: 10px;
+  &:last-child {
+    margin-right: -10px;
+  }
+}
 .header-menu-wrap {
+  height: 100%;
   display: flex;
   list-style-type: none;
+  padding: 2% 0 2% 0;
 }
 
 .header-menu-link {
+  height: 100%;
   display: inline-block;
   text-transform: uppercase;
   color: $white;
