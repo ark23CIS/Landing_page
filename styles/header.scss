@@ -6,6 +6,7 @@ $herobtn-color: #f6e2d1;
 $herobtn-color-bg: #eab88f;
 $chevron-left-color: #b33a47;
 $chevron-right-color: #f0af76;
+$active-color: #2a2a2a;
 
 .hero-wrap {
   padding: 5% 10% 0 10%;
@@ -56,8 +57,8 @@ $chevron-right-color: #f0af76;
 }
 
 .header-menu-item {
-  height: 100%;
-  padding-right: 10px;
+  height: 50px;
+  padding: 10px;
   &:last-child {
     margin-right: -10px;
   }
@@ -65,17 +66,24 @@ $chevron-right-color: #f0af76;
 .header-menu-wrap {
   height: 100%;
   display: flex;
+  align-items: center;
   list-style-type: none;
   padding: 2% 0 2% 0;
 }
 
 .header-menu-link {
   height: 100%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   color: $white;
   background: $gray;
   text-decoration: none;
+}
+
+.header-menu-link--active {
+  background-color: $active-color;
+  color: $logo-color;
 }
 
 .hero-content {

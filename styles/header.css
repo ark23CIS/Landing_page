@@ -62,8 +62,8 @@
 }
 
 .header-menu-item {
-  height: 100%;
-  padding-right: 10px;
+  height: 50px;
+  padding: 10px;
 }
 
 .header-menu-item:last-child {
@@ -75,17 +75,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   padding: 2% 0 2% 0;
 }
 
 .header-menu-link {
   height: 100%;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   color: #fff;
   background: #383838;
   text-decoration: none;
+}
+
+.header-menu-link--active {
+  background-color: #2a2a2a;
+  color: #b297c4;
 }
 
 .hero-content {
