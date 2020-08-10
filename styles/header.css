@@ -159,6 +159,7 @@
 .chevron {
   background-color: #fff;
   text-align: center;
+  opacity: 1;
   height: 50%;
 }
 
