@@ -8,7 +8,6 @@
 }
 
 .hero {
-  background-size: contain;
   background: url("../assets/Layer 1.png") center center no-repeat;
 }
 
@@ -161,6 +160,7 @@
   background-color: #fff;
   opacity: 0.6;
   text-align: center;
+  height: 50%;
 }
 
 .chevron-left {
@@ -184,9 +184,6 @@
 }
 
 @media (max-width: 745px) {
-  .chevron {
-    height: 50%;
-  }
   .hero__title {
     font-size: 30px;
   }

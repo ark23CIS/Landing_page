@@ -4,16 +4,16 @@
 
 $main-font-color: #747474;
 
-@mixin Fjalla {
-  font-family: "Fjalla One", sans-serif;
-}
+// @mixin Fjalla {
+//   font-family: "Fjalla One", sans-serif;
+// }
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  @include Fjalla;
+  // @include Fjalla;
   font-size: 14px;
   color: $main-font-color;
 }

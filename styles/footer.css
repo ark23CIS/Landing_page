@@ -99,6 +99,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  .footer-wrapper {
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 550px) {
   .footer-website-info {
     -ms-grid-columns: 1fr;

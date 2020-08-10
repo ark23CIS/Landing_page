@@ -78,6 +78,12 @@ $subtitle-gray: #a5a5a5;
   }
 }
 
+@media (max-width: 640px) {
+  .footer-wrapper {
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 550px) {
   .footer-website-info {
     grid-template-columns: 1fr;

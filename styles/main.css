@@ -8,7 +8,6 @@
 }
 
 .hero {
-  background-size: contain;
   background: url("../assets/Layer 1.png") center center no-repeat;
 }
 
@@ -161,6 +160,7 @@
   background-color: #fff;
   opacity: 0.6;
   text-align: center;
+  height: 50%;
 }
 
 .chevron-left {
@@ -184,9 +184,6 @@
 }
 
 @media (max-width: 745px) {
-  .chevron {
-    height: 50%;
-  }
   .hero__title {
     font-size: 30px;
   }
@@ -343,6 +340,7 @@
 .main-content-item__title {
   text-transform: uppercase;
   padding-bottom: 5%;
+  line-height: 25px;
 }
 
 .main-content-item__img {
@@ -355,6 +353,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-content-item__subtitle {
+  line-height: 25px;
+}
+
+.main-content-item__subtitle-1, .main-content-item__subtitle-2 {
+  line-height: 25px;
 }
 
 .main-content-item-sign {
@@ -418,6 +424,10 @@
   height: 90%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.main-content-item__img-item {
+  padding: 6%;
 }
 
 .main-content-items {
@@ -599,6 +609,9 @@
         -ms-flex: 0 0 46%;
             flex: 0 0 46%;
   }
+  .hero-wrap {
+    padding: 10% 10% 0 10%;
+  }
   .main-content-items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -675,29 +688,22 @@
     padding-right: 5%;
   }
   .main-content-items {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .main-content-item-8 {
-    -ms-grid-row: 12;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 12 / 1 / 13 / 2;
+  .main-content-item {
+    margin-bottom: 8%;
   }
-  .main-content-item-9 {
-    -ms-grid-row: 13;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 13 / 1 / 14 / 2;
+  .main-content-item-sign {
+    padding: 10% 0;
   }
-  .main-content-item-10 {
-    -ms-grid-row: 14;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-area: 14 / 1 / 15 / 2;
+  .main-content-menu__item {
+    padding: 5% 0;
   }
 }
 
@@ -802,6 +808,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  .footer-wrapper {
+    padding: 0 10%;
+  }
+}
+
 @media (max-width: 550px) {
   .footer-website-info {
     -ms-grid-columns: 1fr;
@@ -846,7 +858,6 @@
 }
 
 body {
-  font-family: "Fjalla One", sans-serif;
   font-size: 14px;
   color: #747474;
 }
