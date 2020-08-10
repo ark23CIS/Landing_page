@@ -103,6 +103,9 @@
   .footer-wrapper {
     padding: 0 10%;
   }
+  .footer-content-item {
+    padding: 5% 0;
+  }
 }
 
 @media (max-width: 550px) {
