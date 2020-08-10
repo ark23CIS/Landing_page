@@ -1,6 +1,7 @@
 $purple-color: #b297c4;
 $main-bg-color: #f0f0f0;
-$main-font-color: #747474;
+$main-font-color-title: #747474;
+$main-font-color-subtitle: #979797;
 $white: #fff;
 
 .main-content-wrapper {
@@ -9,7 +10,7 @@ $white: #fff;
 
 .main-content {
   background-color: $main-bg-color;
-  color: $main-font-color;
+  color: $main-font-color-title;
   &-search {
     width: 100%;
     border-radius: 10px;
@@ -82,10 +83,12 @@ $white: #fff;
     margin-bottom: 20px;
   }
   &__title {
+    font-size: 17px;
     margin-bottom: 15px;
     text-transform: uppercase;
   }
   &__subtitle {
+    color: $main-font-color-subtitle;
     text-decoration: underline;
   }
 }
@@ -101,9 +104,9 @@ $white: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 10% 10%;
+    padding: 0 8% 10%;
     & > div {
-      padding-top: 12%;
+      padding-bottom: 12%;
     }
   }
   &-icons-wrapper {
@@ -112,7 +115,8 @@ $white: #fff;
   &__title {
     text-transform: uppercase;
     padding-bottom: 5%;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 24px;
   }
   &__img {
     display: flex;
@@ -120,10 +124,14 @@ $white: #fff;
     align-items: center;
   }
   &__subtitle {
-    line-height: 25px;
+    line-height: 22px;
+    font-size: 13px;
+    color: $main-font-color-subtitle;
     &-1,
     &-2 {
-      line-height: 25px;
+      font-size: 13px;
+      line-height: 22px;
+      color: $main-font-color-subtitle;
     }
   }
   &-sign {
@@ -131,7 +139,7 @@ $white: #fff;
     align-items: center;
     &__img {
       border-radius: 10%;
-      padding: 5% 10%;
+      padding: 20px 18px;
       margin-right: 17px;
       background-color: $purple-color;
     }
@@ -144,6 +152,8 @@ $white: #fff;
       }
       &__subtitle {
         text-decoration: underline;
+        font-size: 13px;
+        line-height: 22px;
       }
     }
   }
@@ -173,7 +183,7 @@ $white: #fff;
 
 .main-content-items {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -189,7 +199,7 @@ $white: #fff;
   display: block;
   text-transform: uppercase;
   width: 100%;
-  padding: 5% 10%;
+  padding: 5% 8%;
   text-decoration: none;
   color: $white;
   background-color: $purple-color;

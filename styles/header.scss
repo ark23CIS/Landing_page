@@ -109,6 +109,7 @@ $active-color: #2a2a2a;
   display: flex;
   align-self: stretch;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero__subtitle {
@@ -119,11 +120,10 @@ $active-color: #2a2a2a;
 
 .hero__button {
   font-size: 18px;
-  padding: 0.8% 1%;
+  padding: 13px 15px;
   text-transform: uppercase;
-  border: none;
   outline: none;
-  border: 1px solid $herobtn-color;
+  border: 3px solid $herobtn-color;
   border-radius: 8px;
   color: $herobtn-color;
   background-color: $herobtn-color-bg;
@@ -134,12 +134,19 @@ $active-color: #2a2a2a;
   background-color: $white;
   text-align: center;
   opacity: 1;
-  height: 50%;
+  height: 47px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
   &-left {
     color: $chevron-left-color;
+    padding-right: 4px;
   }
   &-right {
     color: $chevron-right-color;
+    padding-left: 4px;
   }
 }
 

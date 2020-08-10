@@ -135,6 +135,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero__subtitle {
@@ -145,11 +148,10 @@
 
 .hero__button {
   font-size: 18px;
-  padding: 0.8% 1%;
+  padding: 13px 15px;
   text-transform: uppercase;
-  border: none;
   outline: none;
-  border: 1px solid #f6e2d1;
+  border: 3px solid #f6e2d1;
   border-radius: 8px;
   color: #f6e2d1;
   background-color: #eab88f;
@@ -160,15 +162,28 @@
   background-color: #fff;
   text-align: center;
   opacity: 1;
-  height: 50%;
+  height: 47px;
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26px;
 }
 
 .chevron-left {
   color: #b33a47;
+  padding-right: 4px;
 }
 
 .chevron-right {
   color: #f0af76;
+  padding-left: 4px;
 }
 
 .hamburger {
