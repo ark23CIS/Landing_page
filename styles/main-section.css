@@ -364,6 +364,7 @@
   .main-content-items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
   }
   .main-content-item-6 {
     -ms-grid-row: 6;
@@ -418,6 +419,7 @@
   .main-content-items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 320px;
   }
   .main-content-item-3 {
     -ms-grid-row: 8;
@@ -507,6 +509,9 @@
   }
   .main-content-menu__item {
     padding: 5% 0;
+  }
+  .main-content-items {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=main-section.css.map */
