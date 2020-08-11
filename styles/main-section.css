@@ -13,6 +13,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 30px;
 }
 
 .main-content-search__icon {
@@ -31,6 +32,7 @@
 
 .main-content-search-form__input {
   padding: 3% 0;
+  height: 100%;
   width: 100%;
   border: none;
   border-bottom-left-radius: 10px;
@@ -106,7 +108,6 @@
 
 .main-content-item {
   background-color: #fff;
-  padding-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,8 +121,8 @@
 }
 
 .main-content-item-wrapper {
-  -ms-flex-preferred-size: 92%;
-      flex-basis: 92%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,24 +130,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 8% 10%;
+  padding: 0 8%;
 }
 
 .main-content-item-wrapper > div {
   padding-bottom: 12%;
 }
 
-.main-content-item-icons-wrapper {
-  padding-bottom: 10%;
-}
-
 .main-content-item__title {
   text-transform: uppercase;
-  padding-bottom: 5%;
   font-size: 17px;
   line-height: 24px;
+  padding-top: 12%;
 }
 
 .main-content-item__img {
@@ -220,8 +215,17 @@
 }
 
 .main-content-item-8__title, .main-content-item-9__title, .main-content-item-10__title {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  padding-bottom: 5%;
+}
+
+.main-content-item-8 {
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.main-content-item-8__title {
+  padding-top: 0;
 }
 
 .main-content-item-icons-wrapper {
@@ -314,9 +318,10 @@
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-area: 1 / 4 / 2 / 5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 110px;
 }
 
 .main-content-item-9 {
@@ -326,7 +331,12 @@
   -ms-grid-column-span: 1;
   grid-area: 2 / 4 / 3 / 5;
   padding: 5%;
+  margin-top: -45%;
   display: block;
+}
+
+.main-content-item-9__title {
+  padding-top: 0;
 }
 
 .main-content-item-2 {

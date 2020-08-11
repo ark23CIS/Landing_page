@@ -15,6 +15,7 @@ $white: #fff;
     width: 100%;
     border-radius: 10px;
     display: flex;
+    height: 30px;
     &__icon {
       padding: 3% 10px 3% 0;
       font-size: 12px;
@@ -32,6 +33,7 @@ $white: #fff;
       width: 100%;
       &__input {
         padding: 3% 0;
+        height: 100%;
         width: 100%;
         border: none;
         -moz-border-radius-bottomleft: 10px;
@@ -95,28 +97,27 @@ $white: #fff;
 
 .main-content-item {
   background-color: $white;
-  padding-top: 5%;
+  // padding-top: 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   &-wrapper {
-    flex-basis: 92%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 8% 10%;
+    padding: 0 8%;
     & > div {
       padding-bottom: 12%;
     }
   }
-  &-icons-wrapper {
-    padding-bottom: 10%;
-  }
+  // &-icons-wrapper {
+  //   padding-bottom: 10%;
+  // }
   &__title {
     text-transform: uppercase;
-    padding-bottom: 5%;
     font-size: 17px;
     line-height: 24px;
+    padding-top: 12%;
   }
   &__img {
     display: flex;
@@ -165,7 +166,13 @@ $white: #fff;
     justify-content: stretch;
     padding: 5%;
     &__title {
-      align-self: flex-start;
+      padding-bottom: 5%;
+    }
+  }
+  &-8 {
+    align-items: space-around;
+    &__title {
+      padding-top: 0;
     }
   }
   &-icons-wrapper {
@@ -228,13 +235,18 @@ $white: #fff;
 }
 .main-content-item-8 {
   grid-area: 1 / 4 / 2 / 5;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 110px;
 }
 
 .main-content-item-9 {
   grid-area: 2 / 4 / 3 / 5;
   padding: 5%;
+  margin-top: -45%;
   display: block;
+  &__title {
+    padding-top: 0;
+  }
 }
 
 .main-content-item-2 {
