@@ -25,6 +25,10 @@
   color: #71607c;
 }
 
+.footer-menu__item-link:hover {
+  color: #c39bd3;
+}
+
 .footer-divider {
   height: 2px;
   width: 100%;
@@ -64,6 +68,10 @@
 .footer-content-item-link {
   text-decoration: none;
   color: #a5a5a5;
+}
+
+.footer-content-item-link:hover {
+  color: #fff;
 }
 
 .social-networks {

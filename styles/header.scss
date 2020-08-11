@@ -82,6 +82,9 @@ $active-color: #2a2a2a;
   color: $white;
   background: $gray;
   text-decoration: none;
+  &:hover {
+    color: $logo-color;
+  }
 }
 
 .header-menu-link--active {
@@ -103,6 +106,10 @@ $active-color: #2a2a2a;
   margin-bottom: 28px;
   font-size: 100px;
   opacity: 0.6;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
 }
 
 .hero__title {
@@ -131,6 +138,10 @@ $active-color: #2a2a2a;
   color: $herobtn-color;
   background-color: $herobtn-color-bg;
   margin-bottom: 60px;
+  &:hover {
+    color: $herobtn-color-bg;
+    background-color: $herobtn-color;
+  }
 }
 
 .chevron {
@@ -143,6 +154,10 @@ $active-color: #2a2a2a;
   justify-content: center;
   align-items: center;
   font-size: 26px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
   &-left {
     color: $chevron-left-color;
     padding-right: 4px;

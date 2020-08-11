@@ -71,7 +71,6 @@ $white: #fff;
 }
 
 .main-content-features {
-  padding: 3% 0;
   margin-bottom: 5%;
   display: flex;
   background-color: $white;
@@ -80,7 +79,13 @@ $white: #fff;
 }
 
 .main-content-feature {
+  padding: 3% 0;
+  width: 100%;
   text-align: center;
+  box-shadow: 6px 0 10px -6px black;
+  &:last-child {
+    box-shadow: none;
+  }
   &__icon {
     margin-bottom: 20px;
   }
@@ -210,6 +215,9 @@ $white: #fff;
   text-decoration: none;
   color: $white;
   background-color: $purple-color;
+  &:hover {
+    background-color: #76448a;
+  }
 }
 
 .fa-arrow-right {
@@ -294,6 +302,12 @@ $white: #fff;
   .main-content-features {
     flex-wrap: wrap;
   }
+  .main-content-feature:nth-child(odd) {
+    box-shadow: 6px 0 10px -6px black;
+  }
+  .main-content-feature:nth-child(even) {
+    box-shadow: 6px 0 10px -6px black;
+  }
   .main-content-feature {
     flex: 0 0 46%;
   }
@@ -333,7 +347,8 @@ $white: #fff;
   }
   .main-content-feature {
     flex: 0 0 96%;
-    padding-bottom: 10%;
+    padding: 10% 0;
+    box-shadow: 0 6px 10px -6px black;
   }
   .header-menu-wrap {
     display: none;
@@ -344,6 +359,7 @@ $white: #fff;
     color: $white;
     padding-right: 5%;
   }
+
   .main-content-items {
     // grid-template-columns: 1fr;
     display: flex;

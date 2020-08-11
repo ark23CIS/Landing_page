@@ -19,6 +19,9 @@ $subtitle-gray: #a5a5a5;
     &-link {
       text-decoration: none;
       color: $purple-color;
+      &:hover {
+        color: #c39bd3;
+      }
     }
   }
   &-divider {
@@ -49,6 +52,9 @@ $subtitle-gray: #a5a5a5;
   &-link {
     text-decoration: none;
     color: $subtitle-gray;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
